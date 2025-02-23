@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 # Print all possible different combinations of two digits.
 # The two digits must be different.
 for i in range(0, 10):
