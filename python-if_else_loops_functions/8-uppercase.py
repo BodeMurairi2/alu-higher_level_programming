@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 # This script checks for uppercase characters in a string
 
 def uppercase(str):
