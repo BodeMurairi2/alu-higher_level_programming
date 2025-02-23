@@ -4,5 +4,5 @@
 def uppercase(str):
     for i in str:
         if ord(i) >= 65 and ord(i) <= 90:
-            return True
-    return False
+            print("Uppercase character in {} found".format(str))
+    print("Uppercase character in {} not found".format(str))
