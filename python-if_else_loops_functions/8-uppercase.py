@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-# This script checks for uppercase characters in a string
+# This script prints a string in uppercase
 
 def uppercase(str):
-    for i in str:
-        if ord(i) >= 65 and ord(i) <= 90:
-            print("Uppercase character in {} found".format(str))
-    print("Uppercase character in {} not found".format(str))
+    """Print a string in uppercase."""
+    for c in str:
+        if ord(c) >= 97 and ord(c) <= 122:
+            c = chr(ord(c) - 32)
+        print("{}".format(c), end="")
+    print("")
