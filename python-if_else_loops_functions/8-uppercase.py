@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-# This script prints a string in uppercase
+# This function changes a str from lower to uppercase
+
 
 def uppercase(str):
-    """Print a string in uppercase."""
-    result = ""
-    for c in str:
-        if ord(c) >= 97 and ord(c) <= 122:
-            c = chr(ord(c) - 32)
-        result += "{:c}".format(c)
-    print(result)
+    new_str = ""
+    for i in str:
+        if i >= 'a' and i <= 'z':
+            new_str = new_str + chr((ord(i) - 32))
+        else:
+            new_str = new_str + i
+
+    print("{}".format(new_str))
