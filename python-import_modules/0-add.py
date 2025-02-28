@@ -2,7 +2,7 @@
 # This script imports the add function from add_0.py
 
 
-from add_0 import add
+from add_0 import *
 
 
 if __name__ == "__main__":
