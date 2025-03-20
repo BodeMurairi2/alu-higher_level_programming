@@ -4,7 +4,6 @@
 This module handles the rectangle form
 '''
 
-
 class Rectangle:
     '''
     This class handles the rectangle form
@@ -13,19 +12,26 @@ class Rectangle:
         self.width = width
         self.height = height
 
+    @property
     def width(self):
+        return self._width
 
-        if not isinstance(self.width, int):
+    @width.setter
+    def width(self, value):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        elif self.width < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
-        else:
-            return self.width
+        self._width = value
 
+    @property
     def height(self):
-        if not isinstance(self.height, int):
+        return self._height
+
+    @height.setter
+    def height(self, value):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        elif self.height < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
-        else:
-            return self.height
+        self._height = value
