@@ -36,3 +36,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+
+my_rectangle = Rectangle(4, 0)
+print(f"{my_rectangle.width} - {my_rectangle.height}")
