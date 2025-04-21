@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Defines a class Student."""
+"""Defines a class Student with 
+a method to return its JSON representation."""
 
 
 class Student:
