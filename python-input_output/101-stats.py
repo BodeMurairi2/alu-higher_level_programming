@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Read a file and print its content to the standard output."""
 import sys
 
 
