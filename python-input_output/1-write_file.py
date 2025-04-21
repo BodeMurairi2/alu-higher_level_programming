@@ -16,5 +16,6 @@ def write_file(filename="", text=""):
     """
     with open(filename, 'a', encoding='utf-8') as file:
         file.write(text)
+        file.write('\n')
         file.close()
     return
