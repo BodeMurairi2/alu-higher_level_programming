@@ -1,13 +1,13 @@
--- This script creates table and columns
+-- This script creates a table and columns
 
 -- This command creates a new table
-CREATE TABLE IF NOT EXIST second_table (
+CREATE TABLE IF NOT EXISTS second_table (
     id INT,
     name VARCHAR(50),
-    score INT,
+    score INT
 );
 
--- This command adds a new record
+-- This command adds new records
 INSERT INTO second_table VALUES (1, 'John', 10);
 INSERT INTO second_table VALUES (2, 'Alex', 3);
 INSERT INTO second_table VALUES (3, 'Bob', 14);
