@@ -11,3 +11,4 @@ with urllib.request.urlopen('https://alu-intranet.hbtn.io/status') as response:
     print("\t- status code: {}".format(response.getcode()))
     print("\t- headers: {}".format(response.getheaders()))
     print("\t- URL: {}".format(response.geturl()))
+    print("\t- status:".format(response.status))
