@@ -8,6 +8,7 @@ import sys
 
 def fetch_header(url):
     """Fetches a URL and displays the value of the X-Request-Id header."""
+    url = sys.argv[1]
     with urllib.request.urlopen(url) as response:
         # Get the value of the X-Request-Id header
         x_request_id = dict(response.headers).get('X-Request-Id')
