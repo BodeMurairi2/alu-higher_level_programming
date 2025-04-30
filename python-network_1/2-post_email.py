@@ -7,10 +7,7 @@ import urllib.parse
 import sys
 
 
-def send_post_request():
-    '''
-    This function sends a POST request
-    '''
+if __name__ == "__main__":
     url = sys.argv[1]
     values = {
         "email": sys.argv[2]
@@ -19,7 +16,3 @@ def send_post_request():
     data = data.encode("ascii")
     with urllib.request.Request(url, data) as response:
         print(response.read().decode("utf-8"))
-
-
-if __name__ == "__main__":
-    send_post_request()
