@@ -3,15 +3,12 @@
 import urllib.request
 
 
-def fetch_status(url='https://alu-intranet.hbtn.io/status'):
-    """Fetches the status of a URL and prints the response."""
-    with urllib.request.urlopen(url) as response:
-        body = response.read()
+if __name__ == '__main__':
+    import urllib.request
+
+    with urllib.request.urlopen('https://intranet.hbtn.io/status') as resp:
+        content = resp.read()
         print("Body response:")
-        print("\t- type: {}".format(type(body)))
-        print("\t- content: {}".format(body))
-        print("\t- utf8 content: {}".format(body.decode('utf-8')))
-
-
-if __name__ == "__main__":
-    fetch_status()
+        print("\t- type: {}".format(type(content)))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content.decode('utf-8')))
