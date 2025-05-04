@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""This module sends a POST request to the URL with the email as
-a parameters and display the body of the response decoded in UTF-8
+""" Script that takes in a URL and an email, sends a POST request
+ And displays the body of the response
 """
-import urllib.request
-import urllib.parse
+
 import sys
+import urllib.parse
+import urllib.request
 
 
 if __name__ == "__main__":
