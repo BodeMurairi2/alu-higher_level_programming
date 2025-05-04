@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""This script fetches contents on the internet
-using the request module"""
+"""
+Script that fetches https://alu-intranet.hbtn.io/status
+"""
 import requests
 
-
-if __name__ == "__main___":
+if __name__ == '__main__':
     url = "https://alu-intranet.hbtn.io/status"
     response = requests.get(url)
     text = response.text
     print("Body response:")
-    print("\- type: {}".format(type(text)))
-    print("\- content: {}".format(text))
+    print("\t- type: {}".format(type(text)))
+    print("\t- content: {}".format(text))
