@@ -16,8 +16,7 @@ function finobucci (number) {
       sum_even_numbers = sum_even_numbers + nums;
     }
   }
-  console.log(`Sums of all sequence number less than 4000000 and even in the finobucci sequence is: ${sum_even_numbers}`);
+  print(`Sums of all sequence number less than 4000000 and even in the finobucci sequence is: ${sum_even_numbers}`);
 }
 
 finobucci(25);
-
