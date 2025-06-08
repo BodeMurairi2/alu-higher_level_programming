@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-class Rectangle {
+const Rectangle = class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0) {
       this.width = w;
@@ -10,14 +10,14 @@ class Rectangle {
 
   print () {
     let printf = '';
-    for (let i = 0; i < this.width; i++) {
-      for (let j = 0; j < this.height; j++) {
-        printf = printf + 'x';
+    for (let x = 0; x < this.height; x++) {
+      for (let y = 0; y < this.width; y++) {
+        printf = printf + 'X';
       }
       console.log(printf);
-      printf = '';
+      prints = '';
     }
   }
-}
+};
 
 module.exports = Rectangle;
