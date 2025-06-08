@@ -1,11 +1,10 @@
 #!/usr/bin/node
+// this script returns the array in reverse
 
 exports.esrever = function (list) {
   const newList = [];
-  let i = list.length - 1;
-  while (i > 0) {
+  for (let i = list.length - 1; i >= 0; i--) {
     newList.push(list[i]);
-    i = i - 1;
   }
   return newList;
 };
