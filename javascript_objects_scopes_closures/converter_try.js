@@ -46,5 +46,5 @@ function converterBase2 (number, base) {
   }
 }
 
-console.log(converterBase1(3, 2));
-console.log(converterBase2(3, 2));
+console.log(converterBase1(1500, 16));
+console.log(converterBase2(2800, 14));
