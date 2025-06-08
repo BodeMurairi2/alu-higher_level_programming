@@ -15,6 +15,7 @@ class Rectangle {
         printf = printf + 'x';
       }
       console.log(printf);
+      printf = '';
     }
   }
 }
