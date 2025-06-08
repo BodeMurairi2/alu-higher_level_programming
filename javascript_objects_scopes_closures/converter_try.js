@@ -46,5 +46,6 @@ function converterBase2 (number, base) {
   }
 }
 
-console.log(converterBase1(1500, 16));
-console.log(converterBase2(2800, 14));
+exports.converter = function (base){
+    return +process.argv[2]).toString(+process.argv[3]);
+}
